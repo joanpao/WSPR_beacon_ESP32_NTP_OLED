@@ -27,14 +27,10 @@
 Adafruit_SSD1306 display(OLED_RST);
 
 // WiFi credentials (puedes mover a settings.h si prefieres)
-//const char* ssid = "CASETA";
-//const char* password = "Damacla1115";
-// UTIEL
-//char MaidenHead[7] = "IM99kp";
-const char* ssid = "TP-Link_7254";
-const char* password = "63341379";
-// VALENCIA
-char MaidenHead[7] = "IM99tl";
+const char* ssid = "XXXXXX";
+const char* password = "XXXXXX";
+char MaidenHead[7] = "XXNNXX";
+
 // NTP setup
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "pool.ntp.org", 0, 60000);  // UTC, actualiza cada 60s
