@@ -8,8 +8,7 @@
 #define DEVMODE
 
 // Your own HAM call. Change it
-// Modifico por mi indicativo
-#define MYCALL "EA5JTT"
+#define MYCALL "XXXXXX"
 
 // The power of your transmission in dBm. 
 // for the si5351 this should be set to 10 (=10 milliwatts).
@@ -51,7 +50,7 @@
 * 6m  50294500ULL, precisa filtro especifico
 * LAs bandas son de 200 Hz por lo que se pone la frecuecnia central y el margen es de +/- 100 Hz
 ************************************************************************************/
-/* INTERBATIONAL WSPR BEACON PROJECT https://github.com/HB9VQQ/WSPRBeacon
+// INTERBATIONAL WSPR BEACON PROJECT https://github.com/HB9VQQ/WSPRBeacon
 static const unsigned long long freqArray[10] = {
      1838100ULL,   // 160m 0,20,40
      3570100ULL,   // 80m 2,22,42
@@ -64,52 +63,6 @@ static const unsigned long long freqArray[10] = {
     24926100ULL,   // 12m 16,36,56 
     28126100ULL    // 10m 18,38,58 
     };
-*/
-/* PLACA 1 con CLK1 
-// No genera bien la señal  1838100ULL, // 160m 0,20,40 no se ha ajustado
-// No se usa                5286600ULL, //  60m 4,24,44 ajustada 
-// Precisa filtro          50288591ULL, //   6m No tiene slot asignado ajustada
-static const unsigned long long freqArray[10] = {
-  10139000ULL,   // ok  30m 0,20,40
-  14095400ULL,   // ok  20m 2,22,42
-  18103940ULL,  //  ok   6m 4,24,44
-   7039280ULL,  //  ok  40m 6,26,46
-  10139000ULL,  //  ok  30m 8,28,48
-  14095400ULL,  //  ok  20m 10,30,50
-  18103940ULL,  //  ok  18m 12,32,52 
-  21093600ULL,  //  ok  15m 14,34,54 
-  24923180ULL,  //  ok  12m 16,36,56 
-  28122750ULL,  //  ok  10m 18,38,58 
-};
-*/
-// PLACA 2 con salida por CLK0
-/*
-static const unsigned long long freqArray[10] = {
-  10139458ULL,  //   10140150 0,20,40
-  14096049ULL,  //   14097040 2,22,42
-  21094555ULL,  //   21096040 4,24,44
-  10139458ULL,  //   6,26,46
-  14096049ULL,  //   8,28,48
-  21094555ULL,  //   10,30,50
-  10139458ULL,  //   12,32,52
-  14096049ULL,  //   14,34,54 
-  21094555ULL,  //   16,36,56 
-  14096049ULL,  //   18,38,58  
-};
-*/
-// PLACA EN USO con CLK1 
-static const unsigned long long freqArray[10] = {
-  10139000ULL,   // ok  30m 0,20,40
-  14095400ULL,   // ok  20m 2,22,42
-  18103940ULL,  //  ok   6m 4,24,44
-   7039280ULL,  //  ok  40m 6,26,46
-  10139000ULL,  //  ok  30m 8,28,48
-  14095400ULL,  //  ok  20m 10,30,50
-  18103940ULL,  //  ok  18m 12,32,52 
-  21093600ULL,  //  ok  15m 14,34,54 
-  24923180ULL,  //  ok  12m 16,36,56 
-  28122750ULL,  //  ok  10m 18,38,58 
-};
 
 /***********************************************************************************
 * GPS SETTINGS
